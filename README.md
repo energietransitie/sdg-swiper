@@ -66,6 +66,7 @@ This software is available under the [Apache 2.0 license](./LICENSE), Copyright
 
 Product owner:
 
+* Claudia Tempels · [@p82801888](https://github.com/p82801888)
 * Henri ter Hofte · [@henriterhofte](https://github.com/henriterhofte) · Twitter [@HeNRGi](https://twitter.com/HeNRGi)
 
 We use and gratefully acknowlegde the efforts of the makers of the following source code and libraries:
