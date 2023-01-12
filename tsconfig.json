@@ -1,0 +1,74 @@
+{
+  // Mapped from: https://www.typescriptlang.org/tsconfig
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+
+    // Type Checking
+    "strict": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noUnusedParameters": true,
+    "noUncheckedIndexedAccess": true,
+
+    // Language and Environment
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": [
+      "ESNext",
+      "dom",
+      "dom.iterable",
+      "ES6"
+    ],
+    "target": "ES6",
+    "useDefineForClassFields": true,
+
+    // Modules
+    "baseUrl": ".",
+    "paths": {
+      "@screens/*": [
+        "src/screens/*"
+      ],
+      "@configuration/*": [
+        "src/configuration/*"
+      ],
+      "@hooks/*": [
+        "src/hooks/*"
+      ],
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@utils/*": [
+        "src/utils/*"
+      ],
+      "@cotypes/*": [
+        "src/types/*"
+      ],
+      "@constants/*": [
+        "src/constants/*"
+      ],
+      "@services/*": [
+        "src/services/*"
+      ],
+      "@assets/*": [
+        "src/assets/*"
+      ],
+      "@structures/*": [
+        "src/structures/*"
+      ],
+      "@external-packages/*": [
+        "src/external-packages/*"
+      ],
+      "@managers/*": [
+        "src/managers/*"
+      ]
+    },
+    
+    // Emit
+    "forceConsistentCasingInFileNames": true,
+    "noEmitHelpers": true,
+    "importsNotUsedAsValues": "error",
+    "importHelpers": true
+  }
+}

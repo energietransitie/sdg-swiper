@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --main-color: #03A982;
+  --dark-color: #181820;
+}
+
+html, body, #root {
+  color: white;
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: calc(100% + env(safe-area-inset-top));
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  overflow-y: auto;
+  overscroll-behavior-y: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -ms-overflow-style: scrollbar;
+  @apply bg-black;
+}
+
+::-webkit-scrollbar {
+  @apply w-1;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-zinc-900;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-zinc-600;
+}
+
+.background {
+  background: var(--dark-color);
+}
+
+@layer components {
+  .btn {
+    @apply flex items-center gap-x-3 justify-center cursor-pointer py-3 px-6 rounded-lg font-medium transition duration-200;
+  }
+
+  .btn-primary {
+    @apply bg-emerald-600 hover:bg-emerald-700 text-white;
+  }
+
+  .btn-red {
+    @apply bg-red-500 hover:bg-red-600 text-white;
+  }
+
+  .btn-primary:disabled {
+    @apply bg-emerald-900;
+  }
+
+  .vertical-center {
+    @apply flex flex-row gap-x-3 items-center;
+  }
+
+  .horizontal-center {
+    @apply flex flex-row gap-x-3 justify-center;
+  }
+
+  .full-center {
+    @apply flex flex-row gap-x-3 items-center justify-center;
+  }
+}
+
+@layer utilities {
+  .rest-screen {
+    min-height: calc(100vh - theme('height.20'));
+  }
+
+  .scrollbar::-webkit-scrollbar {
+    @apply w-1;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-zinc-900;
+  }
+}

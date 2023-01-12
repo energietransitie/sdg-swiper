@@ -1,0 +1,17 @@
+# Docker
+Dockerfile
+.dockerignore
+
+# Misc
+.eslintignore
+.eslintrc.js
+.gitingore
+.space.kts
+CODEOWNERS
+LICENSE
+README.md
+
+# Environment
+node_modules/
+build/
+npm-debug.log
