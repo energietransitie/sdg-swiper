@@ -15,7 +15,7 @@
     "predeploy": "npm run build:production",
     "deploy": "gh-pages -d web-build"
   },
-  "homepage": "https://www.energietransitiewindesheim.nl/sdg-swiper",
+  "homepage": "https://www.energietransitiewindesheim.nl/sdg-swiper/",
   "private": true,
   "jest": {
     "preset": "jest-expo"
