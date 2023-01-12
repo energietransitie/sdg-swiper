@@ -18,7 +18,7 @@ const NotFound = ({ navigation }: IRootProps<'NotFound'>): JSX.Element => {
             { t('notfound-2') }
           </Text>.
           <br />
-          { t('notfound-3') }
+            { t('notfound-3') }
           <Text
             className={'underline decoration-orange-500/50 decoration-dotted underline-offset-2'}>
             { t('notfound-4') }

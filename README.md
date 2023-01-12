@@ -1,6 +1,6 @@
 # Carbon Case - Frontend
 
-This repository contains the source code for the Carbon Case Estimator app. This tool helps to achieve more awareness
+This repository contains the source code for the SDG swiper in a standalone version. This tool helps to achieve more awareness
 and competence in regard to sustainable energy transition.
 
 ## Table of contents
@@ -15,44 +15,21 @@ and competence in regard to sustainable energy transition.
 
 ## General info
 
-This is the app for the Carbon Case Estimator tool. The app is built in React Native, but is currently only built with
-web in mind. The app is built with the intention of being able to be built for iOS and Android in the future, but it
-needs to be tested extensively beforehand. At the time of writing, the app can be used by anyone with a web browser. No
-sign up required. The app consists of two 'tools':
-
-- SDG Swiper: A tool that allows users to swipe through all 17 SDGs to find out on what SDGs they have impact on it,
+This is the standlone version for the SDG swiper: a tool that allows users to swipe through all 17 SDGs to find out on what SDGs they have impact on it,
   either through their IT project or anything else.
-- Carbon Case Estimator: A tool that allows users to estimate the carbon footprint of their IT project.
 
 ## Deploying
 
 Deploying this application can be done via the following steps:
-<br>NOTE: The api urls are 'hardcoded' in the [package.json](package.json) file. If you want to deploy this app, you
-will need to change the api urls to your own api urls.
-
-### Deploying without Docker
-
 1. Clone the repository
 2. Run `npm install` to install all dependencies
-3. Run `npm run build:production` to build the app
+3. Run `npm run deploy` to deploy the app to github pages
 4. You can run the `web-build` folder in a web server of your choice
-
-### Deploying with Docker
-
-1. Clone the repository
-2. Run `docker build -t YOUR_TAG_NAME --build-arg ENVIRONMENT=staging|production .` to build the Docker image
-3. Run `docker run -p 80:80 YOUR_TAG_NAME` to run the Docker image
-4. You can now access the app on `localhost`
-
-This app is also part of a docker compose, so that the whole stack can be deployed at once.
-See [carboncase-deployment-configuration](https://github.com/energietransitie/carboncase-deployment-configuration) for
-more info.
 
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/en/)
 - [Npm](https://www.npmjs.com/)
-- [Docker](https://www.docker.com/) (optional)
 
 ## Developing
 
@@ -68,7 +45,6 @@ Also check the [README](src/external-packages/README.md) for the external packag
 
 - [Node.js](https://nodejs.org/en/)
 - [Npm](https://www.npmjs.com/)
-- [Docker](https://www.docker.com/) (optional)
 - [Expo](https://expo.io/) (optional)
 - Code editor/IDE of your choice
 
@@ -96,22 +72,10 @@ We use and gratefully acknowlegde the efforts of the makers of the following sou
 
 * [Expo](https://github.com/expo/expo), by 650 Industries, Inc., licensed
   under [MIT](https://github.com/expo/expo/blob/main/LICENSE)
-* [Gorhom - Bottom sheet](https://github.com/gorhom/react-native-bottom-sheet), by Mo Gorhom, licensed
-  under [MIT](https://github.com/gorhom/react-native-bottom-sheet/blob/master/LICENSE)
-* [Gorhom - Paper onboarding](https://github.com/gorhom/react-native-paper-onboarding), by Mo Gorhom, licensed
-  under [MIT](https://github.com/gorhom/react-native-paper-onboarding/blob/master/LICENSE)
-* [Gorhom - Portal](https://github.com/gorhom/react-native-portal), by Mo Gorhom, licensed
-  under [MIT](https://github.com/gorhom/react-native-portal/blob/master/LICENSE)
-* [Nivo charts](https://github.com/plouc/nivo), by Raphaël Benitte, licensed
-  under [MIT](https://github.com/plouc/nivo/blob/master/LICENSE.md)
 * [React navigation](https://github.com/react-navigation/react-navigation), by React Navigation Contributors , licensed
   under [MIT](https://github.com/react-navigation/react-navigation/blob/main/packages/native/LICENSE), [MIT](https://github.com/react-navigation/react-navigation/blob/main/packages/native-stack/LICENSE)
-* [Axios](https://github.com/axios/axios), by Matt Zabriskie & Collaborators, licensed
-  under [MIT](https://github.com/axios/axios/blob/v1.x/LICENSE)
 * [Chart.js](https://github.com/chartjs/Chart.js), by Chart.js Contributors, licensed
   under [MIT](https://github.com/chartjs/Chart.js/blob/master/LICENSE.md)
-* [Firebase js sdk](https://github.com/firebase/firebase-js-sdk), by [name of copyright owner], licensed
-  under [Apache 2.0 license](https://github.com/firebase/firebase-js-sdk/blob/master/LICENSE)
 * [i18next](https://github.com/i18next/i18next), by i18next, licensed
   under [MIT](https://github.com/i18next/i18next/blob/master/LICENSE)
 * [InversifyJS](https://github.com/inversify/InversifyJS), by Remo H. Jansen, licensed
@@ -132,17 +96,10 @@ We use and gratefully acknowlegde the efforts of the makers of the following sou
   under [MIT](https://github.com/bvaughn/react-error-boundary/blob/master/LICENSE)
 * [React native](https://github.com/facebook/react-native), by Meta Platforms, Inc. and its affiliates, licensed
   under [MIT](https://github.com/facebook/react-native/blob/main/LICENSE)
-* [React native dropdown picker](https://github.com/hossein-zare/react-native-dropdown-picker), by Hossein Zare,
-  licensed under [MIT](https://github.com/hossein-zare/react-native-dropdown-picker/blob/master/LICENSE)
 * [React native gesture handler](https://github.com/software-mansion/react-native-gesture-handler), by Software Mansion,
   licensed under [MIT](https://github.com/software-mansion/react-native-gesture-handler/blob/main/LICENSE)
-* [React native paper](https://github.com/callstack/react-native-paper), [React native reanimated](https://github.com/software-mansion/react-native-reanimated),
-  by Callstack, licensed
-  under [MIT](https://github.com/callstack/react-native-paper/blob/main/LICENSE.md), [MIT](https://github.com/software-mansion/react-native-reanimated/blob/main/LICENSE)
 * [React native safe area context](https://github.com/th3rdwave/react-native-safe-area-context), by Th3rd Wave, licensed
   under [MIT](https://github.com/th3rdwave/react-native-safe-area-context/blob/main/LICENSE)
-* [React simple typewriter](https://github.com/awran5/react-simple-typewriter), by Awran5, licensed
-  under [MIT](https://github.com/awran5/react-simple-typewriter/blob/main/LICENSE)
 * [Reflect metadata](https://github.com/rbuckton/reflect-metadata), by rbuckton, licensed
   under [Apache 2.0 license](https://github.com/rbuckton/reflect-metadata/blob/master/LICENSE)
 * [React native for web](https://github.com/necolas/react-native-web), by Nicolas Gallagher, licensed

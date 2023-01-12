@@ -8,8 +8,8 @@ const linking: LinkingOptions<IRootLinking> = {
       /**
        * Sustainable Development Goal Swiper routes
        */
-      Sdg: '',
-      SdgResult: 'result',
+      Sdg: 'sdg-swiper',
+      SdgResult: 'sdg-swiper/result',
 
       /**
        * Error routes
