@@ -18,6 +18,13 @@ and competence in regard to sustainable energy transition.
 This is the standlone version for the SDG swiper: a tool that allows users to swipe through all 17 SDGs to find out on what SDGs they have impact on it,
   either through their IT project or anything else.
 
+## Updating SDGs
+Don't know how to code, but want to update SDG information? No problem!
+
+Updating SDG information:  
+- Go to the [SDG data file](src/constants/SdgData.ts) and edit the desired SDG.
+- Updated title or description? Ensure to update the translation files also: [English](web/locales/en/translation.json) and [Dutch](web/locales/nl/translation.json). 
+
 ## Deploying
 
 Deploying this application can be done via the following steps:
