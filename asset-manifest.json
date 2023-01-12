@@ -1,7 +1,7 @@
 {
   "files": {
-    "app.js": "/sdg-swiper/static/js/app.ff7c63a0.chunk.js",
-    "app.js.map": "/sdg-swiper/static/js/app.ff7c63a0.chunk.js.map",
+    "app.js": "/sdg-swiper/static/js/app.3e9c6bce.chunk.js",
+    "app.js.map": "/sdg-swiper/static/js/app.3e9c6bce.chunk.js.map",
     "runtime~app.js": "/sdg-swiper/static/js/runtime~app.09c904af.js",
     "runtime~app.js.map": "/sdg-swiper/static/js/runtime~app.09c904af.js.map",
     "static/js/2.1a043b73.chunk.js": "/sdg-swiper/static/js/2.1a043b73.chunk.js",
@@ -60,6 +60,6 @@
   "entrypoints": [
     "static/js/runtime~app.09c904af.js",
     "static/js/2.1a043b73.chunk.js",
-    "static/js/app.ff7c63a0.chunk.js"
+    "static/js/app.3e9c6bce.chunk.js"
   ]
 }
