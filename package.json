@@ -11,8 +11,11 @@
     "build:production": "cross-env API_BASE_URL=https://api.app.carboncase.energietransitiewindesheim.nl npx expo export:web",
     "test": "jest --passWithNoTests",
     "eslint": "npx eslint .",
-    "eslint:fix": "npx eslint . --fix"
+    "eslint:fix": "npx eslint . --fix",
+    "predeploy": "npm run build:production",
+    "deploy": "gh-pages -d web-build",
   },
+  "homepage": "https://strazz1337.github.io/sdg-swiper",
   "private": true,
   "jest": {
     "preset": "jest-expo"
@@ -59,7 +62,7 @@
     "jspdf-autotable": "^3.5.25",
     "nativewind": "^2.0.11",
     "react": "18.1.0",
-    "react-chartjs-2": "^5.2.0",
+    "react-chartjs-2": "^4.3.1",
     "react-dom": "18.1.0",
     "react-error-boundary": "^3.1.4",
     "react-i18next": "^12.0.0",
@@ -97,6 +100,7 @@
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-react": "^7.31.11",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "gh-pages": "^4.0.0",
     "jest": "^27.5.1",
     "jest-expo": "^47.0.1",
     "metro": "^0.73.3",
